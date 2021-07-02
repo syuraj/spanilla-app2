@@ -1,27 +1,24 @@
-import React, { Component } from "react";
-import { View, ImageBackground} from "react-native";
-import HTML from "react-native-render-html";
-import truncate from 'truncate-html';
-import { fonts } from "../../utils/fonts";
+import React, {Component} from 'react';
+import {View, ImageBackground} from 'react-native';
+import HTML from 'react-native-render-html';
+// import truncate from 'truncate-html';
+import {fonts} from '../../utils/fonts';
 export default class index extends Component {
-  
   render() {
-    const tagsStyles={
+    const tagsStyles = {
       lineHeight: 15,
-      maxLines:1
-    }
-    const baseFontStyle={
+      maxLines: 1,
+    };
+    const baseFontStyle = {
       fontFamily: fonts.PoppinsMedium,
-      color: "#000",
+      color: '#000',
       fontSize: 14,
-      justifyContent: "flex-start",
-    }
+      justifyContent: 'flex-start',
+    };
     return (
       <View>
-        <View
-          style={{ flexDirection: "row"}}
-         >
-          <View style={{ flexDirection: "column", flex: 1 }}>
+        <View style={{flexDirection: 'row'}}>
+          <View style={{flexDirection: 'column', flex: 1}}>
             {/* <TextSemiBold
               Text={this.props.Categories}
               extraStyle={{
@@ -33,16 +30,15 @@ export default class index extends Component {
             <HTML
               html={this.props.Categories}
               tagsStyles={{
-                resizeMode: "contain",
-                lineHeight:1.5,
-                maxLines: 1
+                resizeMode: 'contain',
+                lineHeight: 1.5,
+                maxLines: 1,
               }}
               baseFontStyle={{
-                color: "#606369",
+                color: '#606369',
                 fontFamily: fonts.PoppinsSemiBold,
                 fontSize: 14,
-                justifyContent: "flex-start",
-               
+                justifyContent: 'flex-start',
               }}
             />
             {/* <TextMedium
@@ -56,31 +52,26 @@ export default class index extends Component {
               numberOfLines={3}
               Text={this.props.Title}
             /> */}
-            <View style={{ marginVertical: 2 }} />
+            <View style={{marginVertical: 2}} />
             <HTML
-              html={truncate(this.props.Title, {
-                              length: 75,
-                              stripTags: true
-                            })}
+              html={this.props.Title}
               tagsStyles={tagsStyles}
               baseFontStyle={baseFontStyle}
               numberOfLines={1}
-              
             />
           </View>
           <View
             style={{
-              flexDirection: "column",
+              flexDirection: 'column',
               flex: 0.35,
               marginLeft: 15,
               marginTop: 5,
-              height: 85
-            }}
-          >
+              height: 85,
+            }}>
             <ImageBackground
-              imageStyle={{ borderRadius: 5 }}
+              imageStyle={{borderRadius: 5}}
               source={this.props.source}
-              style={{ flex: 1,}}
+              style={{flex: 1}}
             />
           </View>
         </View>

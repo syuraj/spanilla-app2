@@ -1,3 +1,4 @@
+import {View, Text} from 'react-native';
 import MainScreen from '../../screens/MainScreen/index';
 import AboutUs from '../../screens/AboutUs/index';
 import Bookmarks from '../../screens/Bookmarks/index';
@@ -10,60 +11,51 @@ import ShareApp from '../../screens/ShareApp/index';
 import Details from '../../screens/Details/index';
 import PostList from '../../screens/PostList/index';
 import SearchCategoriesList from '../../screens/SearchCtegoriesList/index';
-import { StackNavigator } from "react-navigation";
+import {StackNavigator} from 'react-navigation';
 
-export default (Project = StackNavigator({
-    MainScreen: {
-      screen: MainScreen
-    },
-    AboutUs:
-    {
-      screen: AboutUs
-    },
-    Bookmarks:
-    {
-      screen:Bookmarks
-    },
-    Categories:
-    {
-      screen:Categories,
-    },
-    ContactUs:
-    {
-      screen:ContactUs
-    },
-    FAQ:
-    {
-      screen:FAQ
-    },
-    Home:
-    {
-      screen:Home,
-    },
-    More:
-    {
-      screen:More
-    },
-    // Search:
-    // {
-    //   screen:Search,
-    // },
-    ShareApp:
-    {
-      screen:ShareApp
-    },
-    Details:
-    {
-      screen:Details
-    },
-    PostList:
-    {
-      screen:PostList,
-      
-    },
-    SearchCategoriesList:
-    {
-      screen:SearchCategoriesList,
-    }
-  }))
-  
+export default Project = StackNavigator({
+  MainScreen: {
+    screen: (
+      <View>
+        <Text style={{color: '#4A84FC'}}>W</Text>
+      </View>
+    ),
+  },
+  // AboutUs: {
+  //   screen: AboutUs,
+  // },
+  // Bookmarks: {
+  //   screen: Bookmarks,
+  // },
+  // Categories: {
+  //   screen: Categories,
+  // },
+  // ContactUs: {
+  //   screen: ContactUs,
+  // },
+  // FAQ: {
+  //   screen: FAQ,
+  // },
+  // Home: {
+  //   screen: Home,
+  // },
+  // More: {
+  //   screen: More,
+  // },
+  // // Search:
+  // // {
+  // //   screen:Search,
+  // // },
+  // ShareApp: {
+  //   screen: ShareApp,
+  // },
+  // Details: {
+  //   screen: Details,
+  // },
+  // PostList: {
+  //   screen: PostList,
+  // },
+  // SearchCategoriesList: {
+  //   screen: SearchCategoriesList,
+  // },
+});

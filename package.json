@@ -10,29 +10,33 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "17.0.1",
-    "react-native": "0.64.2",
+    "buffer": "^6.0.3",
     "moment-timezone": "^0.5.21",
-    "native-base": "^2.8.1",
-    "react-native-admob": "^2.0.0-beta.5",
+    "native-base": "^3.0.3",
+    "react": "17.0.2",
+    "react-native": "0.64.2",
     "react-native-firebase": "^5.1.0",
-    "react-native-render-html": "^3.10.0",
+    "react-native-render-html": "^5.1.1",
+    "react-native-safe-area-context": "^3.2.0",
     "react-native-splash-screen": "^3.0.6",
+    "react-native-svg": "^12.1.1",
     "react-native-tabbar-bottom": "^1.0.4",
-    "react-native-timeago": "^0.4.0",
+    "react-native-timeago": "^0.5.0",
+    "react-native-vector-icons": "^8.1.0",
     "react-navigation": "^2.17.0",
-    "toggle-switch-react-native": "^2.0.2",
-    "truncate-html": "^1.0.1"
+    "styled-components": "^5.3.0",
+    "styled-system": "^5.1.5",
+    "toggle-switch-react-native": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.6.3",
-    "eslint": "7.14.0",
+    "eslint": "7.29.0",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.64.0",
-    "react-test-renderer": "17.0.1"
+    "react-test-renderer": "17.0.2"
   },
   "jest": {
     "preset": "react-native"

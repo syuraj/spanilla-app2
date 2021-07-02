@@ -22,7 +22,7 @@ import styles from "./style";
 import Icon from "react-native-vector-icons/Ionicons";
 import HTML from "react-native-render-html";
 import config from "../../Config/index";
-import AdvertisementBanner from "../AdBanner/index";
+// import AdvertisementBanner from "../AdBanner/index";
 export default class index extends Component {
   static navigationOptions = {
     header: null
@@ -359,7 +359,7 @@ export default class index extends Component {
             />
           </View>
         </ScrollView>
-        <AdvertisementBanner adUnitID={config.banner.homeAdID} />
+        {/* <AdvertisementBanner adUnitID={config.banner.homeAdID} /> */}
       </View>
     );
   }
