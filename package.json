@@ -10,19 +10,18 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "17.0.1",
-    "react-native": "0.64.2",
+    "buffer": "^6.0.3",
     "moment-timezone": "^0.5.21",
     "native-base": "^2.8.1",
-    "react-native-admob": "^2.0.0-beta.5",
+    "react": "17.0.2",
+    "react-native": "0.64.2",
     "react-native-firebase": "^5.1.0",
-    "react-native-render-html": "^3.10.0",
+    "react-native-render-html": "5.1.1",
     "react-native-splash-screen": "^3.0.6",
     "react-native-tabbar-bottom": "^1.0.4",
     "react-native-timeago": "^0.4.0",
     "react-navigation": "^2.17.0",
-    "toggle-switch-react-native": "^2.0.2",
-    "truncate-html": "^1.0.1"
+    "toggle-switch-react-native": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

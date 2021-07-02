@@ -9,7 +9,7 @@ import style from "./style";
 import Header from "../../Components/Header/index";
 import container from '../../Styles/container';
 import SplashScreen from 'react-native-splash-screen';
-import AdvertisementBanner from '../AdBanner/index';
+// import AdvertisementBanner from '../AdBanner/index';
 import Config from "../../Config/index";
 export default class exampleTabs extends Component {
   constructor() {
@@ -45,7 +45,7 @@ export default class exampleTabs extends Component {
           <Bookmarks navigation={this.props.navigation}>Screen1</Bookmarks>
         )}
         {this.state.page === "ChatScreen" && (
-         
+
           <More navigation={this.props.navigation}>Screen4</More>
         )}
         {/* {this.state.page === "SearchScreen" && <Text>Screen5</Text>} */}
@@ -80,7 +80,7 @@ export default class exampleTabs extends Component {
             }
           ]}
         />
-      
+
       </View>
     );
   }
